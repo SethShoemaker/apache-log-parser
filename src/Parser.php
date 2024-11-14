@@ -151,7 +151,7 @@ class Parser
             case 's': // Status
             case 'S': // Bytes transferred (received and sent), including request and headers
             case 'T': // Time taken to serve the request
-                return '([0-9]+)';
+                return '([0-9]+|\-)';
 
             case 'H': // Request protocol
                 return '(HTTP\/[0-9\.]+)';
